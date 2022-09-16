@@ -37,3 +37,35 @@ func (r *CourseRepository) Save(ctx context.Context, course mooc.Course) error {
 
 	return nil
 }
+
+// Get all courses the mooc.CourseRepository interface.
+func (r *CourseRepository) GetAll(ctx context.Context) (courses []mooc.Course, err error) {
+	coursesSQLStruct := sqlbuilder.NewSelectBuilder()
+	coursesSQLStruct.Select("id", "name", "duration")
+	coursesSQLStruct.From(sqlCourseTable)
+
+	query, args := coursesSQLStruct.Build()
+
+	rows, err := r.db.QueryContext(ctx, query, args)
+
+	if err != nil {
+		return nil, fmt.Errorf("error trying to get courses on database: %v", err)
+	}
+
+	defer rows.Close()
+	courses = []mooc.Course{}
+	for rows.Next() {
+		var sqlCourse sqlCourse
+		err := rows.Scan(sqlCourse.ID, sqlCourse.Name, sqlCourse.Duration)
+		if err != nil {
+			return nil, err
+		}
+		course, err := mooc.NewCourse(sqlCourse.ID, sqlCourse.Name, sqlCourse.Duration)
+		if err != nil {
+			return nil, err
+		}
+		courses = append(courses, course)
+	}
+
+	return courses, nil
+}
