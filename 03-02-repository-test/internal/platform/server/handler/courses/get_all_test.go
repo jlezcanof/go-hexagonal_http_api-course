@@ -89,7 +89,7 @@ func TestHandler_GetAll(t *testing.T) {
 	})*/
 }
 
-func convertToCourseResponse(courses []mooc.Course) []CourseResponse {
+/*func convertToCourseResponse(courses []mooc.Course) []CourseResponse {
 	var response []CourseResponse
 
 	if len(courses) == 0 {
@@ -105,4 +105,4 @@ func convertToCourseResponse(courses []mooc.Course) []CourseResponse {
 	}
 
 	return response
-}
+}*/
