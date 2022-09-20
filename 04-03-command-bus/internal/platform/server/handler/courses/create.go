@@ -4,10 +4,10 @@ import (
 	"errors"
 	"net/http"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/04-03-command-bus/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-03-command-bus/internal/creating"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-03-command-bus/kit/command"
 	"github.com/gin-gonic/gin"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/04-03-command-bus/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-03-command-bus/internal/creating"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-03-command-bus/kit/command"
 )
 
 type createRequest struct {

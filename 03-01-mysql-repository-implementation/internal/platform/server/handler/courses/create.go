@@ -3,8 +3,8 @@ package courses
 import (
 	"net/http"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/03-01-mysql-repository-implementation/internal"
 	"github.com/gin-gonic/gin"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/03-01-mysql-repository-implementation/internal"
 )
 
 type createRequest struct {

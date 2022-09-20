@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/creating"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/bus/inmemory"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/server"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/storage/mysql"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/creating"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/bus/inmemory"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/server"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/storage/mysql"
 )
 
 const (

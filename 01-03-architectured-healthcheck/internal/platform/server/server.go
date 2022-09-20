@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/01-03-architectured-healthcheck/internal/platform/server/handler/health"
 	"github.com/gin-gonic/gin"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/01-03-architectured-healthcheck/internal/platform/server/handler/health"
 )
 
 type Server struct {

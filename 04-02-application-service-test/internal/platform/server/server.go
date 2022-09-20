@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-02-application-service-test/internal/creating"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-02-application-service-test/internal/platform/server/handler/courses"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-02-application-service-test/internal/platform/server/handler/health"
 	"github.com/gin-gonic/gin"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-02-application-service-test/internal/creating"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-02-application-service-test/internal/platform/server/handler/courses"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-02-application-service-test/internal/platform/server/handler/health"
 )
 
 type Server struct {

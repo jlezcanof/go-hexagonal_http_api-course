@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/06-03-gin-middlewares/kit/command"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/06-03-gin-middlewares/kit/command"
 )
 
 const CourseCommandType command.Type = "command.creating.course"

@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-01-publishing-domain-events/internal/creating"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-01-publishing-domain-events/internal/platform/bus/inmemory"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-01-publishing-domain-events/internal/platform/server"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-01-publishing-domain-events/internal/platform/storage/mysql"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-01-publishing-domain-events/internal/creating"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-01-publishing-domain-events/internal/platform/bus/inmemory"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-01-publishing-domain-events/internal/platform/server"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-01-publishing-domain-events/internal/platform/storage/mysql"
 )
 
 const (

@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"time"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/08-03-debugging/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-03-debugging/internal/creating"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-03-debugging/internal/increasing"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-03-debugging/internal/platform/bus/inmemory"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-03-debugging/internal/platform/server"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-03-debugging/internal/platform/storage/mysql"
 	_ "github.com/go-sql-driver/mysql"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/08-03-debugging/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-03-debugging/internal/creating"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-03-debugging/internal/increasing"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-03-debugging/internal/platform/bus/inmemory"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-03-debugging/internal/platform/server"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-03-debugging/internal/platform/storage/mysql"
 	"github.com/kelseyhightower/envconfig"
 )
 
@@ -54,7 +54,7 @@ func Run() error {
 type config struct {
 	// Server configuration
 	Host            string        `default:"localhost"`
-	Port            uint          `default:"8080"`
+	Port            uint          `default:"8081"`
 	ShutdownTimeout time.Duration `default:"10s"`
 	// Database configuration
 	DbUser    string        `default:"codely"`

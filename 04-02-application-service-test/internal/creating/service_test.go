@@ -3,9 +3,10 @@ package creating
 import (
 	"context"
 	"errors"
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/04-02-application-service-test/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-02-application-service-test/internal/platform/storage/storagemocks"
 	"testing"
+
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/04-02-application-service-test/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-02-application-service-test/internal/platform/storage/storagemocks"
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
@@ -50,9 +51,3 @@ func Test_CourseService_CreateCourse_Succeed(t *testing.T) {
 	courseRepositoryMock.AssertExpectations(t)
 	assert.NoError(t, err)
 }
-
-
-
-
-
-

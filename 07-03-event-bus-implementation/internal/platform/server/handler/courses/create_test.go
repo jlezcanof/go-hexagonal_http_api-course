@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/kit/command/commandmocks"
 	"github.com/gin-gonic/gin"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/kit/command/commandmocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
