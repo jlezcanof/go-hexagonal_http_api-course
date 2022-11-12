@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/03-01-mysql-repository-implementation/internal/platform/server"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/03-01-mysql-repository-implementation/internal/platform/storage/mysql"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/03-01-mysql-repository-implementation/internal/platform/server"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/03-01-mysql-repository-implementation/internal/platform/storage/mysql"
 )
 
 const (

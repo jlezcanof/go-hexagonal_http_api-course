@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"time"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/08-02-build-and-deploy/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/creating"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/increasing"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/platform/bus/inmemory"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/platform/server"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/platform/storage/mysql"
 	_ "github.com/go-sql-driver/mysql"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/08-02-build-and-deploy/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/creating"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/increasing"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/platform/bus/inmemory"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/platform/server"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-02-build-and-deploy/internal/platform/storage/mysql"
 	"github.com/kelseyhightower/envconfig"
 )
 

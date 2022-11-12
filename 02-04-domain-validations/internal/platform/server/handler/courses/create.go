@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/02-04-domain-validations/internal"
 	"github.com/gin-gonic/gin"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/02-04-domain-validations/internal"
 )
 
 type createRequest struct {

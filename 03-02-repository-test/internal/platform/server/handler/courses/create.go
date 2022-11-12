@@ -3,8 +3,8 @@ package courses
 import (
 	"net/http"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/03-02-repository-test/internal"
 	"github.com/gin-gonic/gin"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/03-02-repository-test/internal"
 )
 
 type createRequest struct {

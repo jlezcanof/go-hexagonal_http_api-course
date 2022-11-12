@@ -9,10 +9,10 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/server/handler/courses"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/server/handler/health"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/05-01-graceful-shutdown/kit/command"
 	"github.com/gin-gonic/gin"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/server/handler/courses"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/05-01-graceful-shutdown/internal/platform/server/handler/health"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/05-01-graceful-shutdown/kit/command"
 )
 
 type Server struct {

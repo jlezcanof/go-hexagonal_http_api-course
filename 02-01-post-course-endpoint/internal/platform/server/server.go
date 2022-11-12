@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/02-01-post-course-endpoint/internal/platform/server/handler/courses"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/02-01-post-course-endpoint/internal/platform/server/handler/health"
 	"github.com/gin-gonic/gin"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/02-01-post-course-endpoint/internal/platform/server/handler/courses"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/02-01-post-course-endpoint/internal/platform/server/handler/health"
 )
 
 type Server struct {

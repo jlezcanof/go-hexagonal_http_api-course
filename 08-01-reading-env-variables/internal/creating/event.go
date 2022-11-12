@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/08-01-reading-env-variables/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-01-reading-env-variables/internal/increasing"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-01-reading-env-variables/kit/event"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/08-01-reading-env-variables/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-01-reading-env-variables/internal/increasing"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-01-reading-env-variables/kit/event"
 )
 
 type IncreaseCoursesCounterOnCourseCreated struct {

@@ -4,9 +4,9 @@ import (
 	"errors"
 	"net/http"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/04-01-application-service/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-01-application-service/internal/creating"
 	"github.com/gin-gonic/gin"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/04-01-application-service/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-01-application-service/internal/creating"
 )
 
 type createRequest struct {

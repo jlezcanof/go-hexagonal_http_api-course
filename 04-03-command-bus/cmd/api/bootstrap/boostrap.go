@@ -4,11 +4,11 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-03-command-bus/internal/creating"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-03-command-bus/internal/platform/bus/inmemory"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-03-command-bus/internal/platform/server"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/04-03-command-bus/internal/platform/storage/mysql"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-03-command-bus/internal/creating"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-03-command-bus/internal/platform/bus/inmemory"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-03-command-bus/internal/platform/server"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/04-03-command-bus/internal/platform/storage/mysql"
 )
 
 const (

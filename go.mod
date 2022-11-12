@@ -1,8 +1,9 @@
-module github.com/CodelyTV/go-hexagonal_http_api-course
+module github.com/jlezcanof/go-hexagonal_http_api-course
 
 go 1.15
 
 require (
+	github.com/jlezcanof/go-hexagonal_http_api-course v0.0.0-20210224011950-bfd8a00f21ed
 	github.com/DATA-DOG/go-sqlmock v1.5.0
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-sql-driver/mysql v1.5.0
