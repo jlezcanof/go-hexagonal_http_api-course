@@ -7,9 +7,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/03-02-repository-test/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/03-02-repository-test/internal/platform/storage/storagemocks"
 	"github.com/gin-gonic/gin"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/03-02-repository-test/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/03-02-repository-test/internal/platform/storage/storagemocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
