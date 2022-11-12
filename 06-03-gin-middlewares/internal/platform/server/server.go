@@ -9,12 +9,12 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/06-03-gin-middlewares/internal/platform/server/handler/courses"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/06-03-gin-middlewares/internal/platform/server/handler/health"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/06-03-gin-middlewares/internal/platform/server/middleware/logging"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/06-03-gin-middlewares/internal/platform/server/middleware/recovery"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/06-03-gin-middlewares/kit/command"
 	"github.com/gin-gonic/gin"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/06-03-gin-middlewares/internal/platform/server/handler/courses"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/06-03-gin-middlewares/internal/platform/server/handler/health"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/06-03-gin-middlewares/internal/platform/server/middleware/logging"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/06-03-gin-middlewares/internal/platform/server/middleware/recovery"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/06-03-gin-middlewares/kit/command"
 )
 
 type Server struct {

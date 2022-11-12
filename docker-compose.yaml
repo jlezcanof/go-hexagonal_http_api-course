@@ -7,7 +7,7 @@ services:
       MOOC_HOST: 0.0.0.0
       MOOC_DBHOST: mysql
     ports:
-      - 8080:8080
+      - 8081:8081
 
   mysql:
     image: mysql:8.0.22

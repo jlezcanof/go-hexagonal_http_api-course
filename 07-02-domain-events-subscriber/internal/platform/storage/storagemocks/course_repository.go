@@ -5,7 +5,7 @@ package storagemocks
 import (
 	context "context"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal"
 	mock "github.com/stretchr/testify/mock"
 )
 

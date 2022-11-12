@@ -20,6 +20,4 @@ Es decir, un middleware que en base a las peticiones entrantes exponga métricas
 
 Si buscáis por ahí seguro que podéis encontrar varios ejemplos que os sirvan de orientación y/o soporte, pero la gracia del reto es que lo intentéis vosotros por vuestra cuenta.
 
-
 ¿Quién será el/la primer/a valiente?
-

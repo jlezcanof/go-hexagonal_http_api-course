@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"time"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/creating"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/increasing"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/platform/bus/inmemory"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/platform/server"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/platform/storage/mysql"
 	_ "github.com/go-sql-driver/mysql"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/creating"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/increasing"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/platform/bus/inmemory"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/platform/server"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/platform/storage/mysql"
 )
 
 const (

@@ -1,10 +1,12 @@
 package courses
 
 import (
+	"errors"
+	"log"
 	"net/http"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/02-04-domain-validations/internal"
 	"github.com/gin-gonic/gin"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/02-04-domain-validations/internal"
 )
 
 type createRequest struct {
@@ -23,7 +25,22 @@ func CreateHandler(courseRepository mooc.CourseRepository) gin.HandlerFunc {
 		}
 
 		course, err := mooc.NewCourse(req.ID, req.Name, req.Duration)
+
 		if err != nil {
+			// ver aqui devolver distintos codigos de errores segun cada VO
+			// CourseId   -> 406
+			// CourseName -> 410
+			log.Println(err.Error())
+
+			if errors.Is(err, mooc.ErrInvalidCourseID) {
+				ctx.JSON(http.StatusNotAcceptable, err.Error())
+				return
+			}
+			if errors.Is(err, mooc.ErrBasicConditionsCourseName) {
+				ctx.JSON(http.StatusGone, err.Error())
+				return
+			}
+
 			ctx.JSON(http.StatusBadRequest, err.Error())
 			return
 		}

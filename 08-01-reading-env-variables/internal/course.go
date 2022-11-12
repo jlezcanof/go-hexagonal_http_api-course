@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/08-01-reading-env-variables/kit/event"
 	"github.com/google/uuid"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/08-01-reading-env-variables/kit/event"
 )
 
 var ErrInvalidCourseID = errors.New("invalid Course ID")

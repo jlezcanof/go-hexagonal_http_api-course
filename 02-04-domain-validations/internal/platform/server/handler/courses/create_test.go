@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/02-04-domain-validations/internal/platform/storage/storagemocks"
 	"github.com/gin-gonic/gin"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/02-04-domain-validations/internal/platform/storage/storagemocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
@@ -46,7 +46,7 @@ func TestHandler_Create(t *testing.T) {
 	t.Run("given a valid request it returns 201", func(t *testing.T) {
 		createCourseReq := createRequest{
 			ID:       "8a1c5cdc-ba57-445a-994d-aa412d23723f",
-			Name:     "Demo Course",
+			Name:     "Demo Course DDD",
 			Duration: "10 months",
 		}
 
@@ -64,4 +64,51 @@ func TestHandler_Create(t *testing.T) {
 
 		assert.Equal(t, http.StatusCreated, res.StatusCode)
 	})
+
+	t.Run("given a invalid id in request returns 406", func(t *testing.T) {
+		createCourseReq := createRequest{
+			ID:       "invalid-id",
+			Name:     "Demo Course DDD",
+			Duration: "10 months",
+		}
+
+		b, err := json.Marshal(createCourseReq)
+		require.NoError(t, err)
+
+		req, err := http.NewRequest(http.MethodPost, "/courses", bytes.NewBuffer(b))
+		require.NoError(t, err)
+
+		rec := httptest.NewRecorder()
+		r.ServeHTTP(rec, req)
+
+		res := rec.Result()
+		defer res.Body.Close()
+
+		assert.Equal(t, http.StatusNotAcceptable, res.StatusCode)
+
+	})
+
+	t.Run("given a incorrect name in request returns 410", func(t *testing.T) {
+		createCourseReq := createRequest{
+			ID:       "8a1c5cdc-ba57-445a-994d-aa412d23723f",
+			Name:     "Demo DDD",
+			Duration: "10 months",
+		}
+
+		b, err := json.Marshal(createCourseReq)
+		require.NoError(t, err)
+
+		req, err := http.NewRequest(http.MethodPost, "/courses", bytes.NewBuffer(b))
+		require.NoError(t, err)
+
+		rec := httptest.NewRecorder()
+		r.ServeHTTP(rec, req)
+
+		res := rec.Result()
+		defer res.Body.Close()
+
+		assert.Equal(t, http.StatusGone, res.StatusCode)
+
+	})
+
 }

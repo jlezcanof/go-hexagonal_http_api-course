@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/03-02-repository-test/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/03-02-repository-test/internal/platform/server/handler/courses"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/03-02-repository-test/internal/platform/server/handler/health"
 	"github.com/gin-gonic/gin"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/03-02-repository-test/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/03-02-repository-test/internal/platform/server/handler/courses"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/03-02-repository-test/internal/platform/server/handler/health"
 )
 
 type Server struct {
@@ -38,4 +38,5 @@ func (s *Server) Run() error {
 func (s *Server) registerRoutes() {
 	s.engine.GET("/health", health.CheckHandler())
 	s.engine.POST("/courses", courses.CreateHandler(s.courseRepository))
+	s.engine.GET("/courses", courses.GetHandler(s.courseRepository))
 }

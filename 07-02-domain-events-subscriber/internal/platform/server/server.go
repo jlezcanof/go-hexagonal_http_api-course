@@ -9,12 +9,12 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal/platform/server/handler/courses"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal/platform/server/handler/health"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal/platform/server/middleware/logging"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal/platform/server/middleware/recovery"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-02-domain-events-subscriber/kit/command"
 	"github.com/gin-gonic/gin"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal/platform/server/handler/courses"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal/platform/server/handler/health"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal/platform/server/middleware/logging"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-02-domain-events-subscriber/internal/platform/server/middleware/recovery"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-02-domain-events-subscriber/kit/command"
 )
 
 type Server struct {

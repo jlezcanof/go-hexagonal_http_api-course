@@ -4,11 +4,15 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"log"
+
+	"strings"
 
 	"github.com/google/uuid"
 )
 
 var ErrInvalidCourseID = errors.New("invalid Course ID")
+var ErrBasicConditionsCourseName = errors.New("invalid Course Name")
 
 // CourseID represents the course unique identifier.
 type CourseID struct {
@@ -43,6 +47,20 @@ type CourseName struct {
 func NewCourseName(value string) (CourseName, error) {
 	if value == "" {
 		return CourseName{}, ErrEmptyCourseName
+	}
+
+	// debe tener al menos un espacio en blanco
+	if !strings.Contains(value, " ") {
+		log.Println("no tiene espacio en blanco")
+		return CourseName{}, fmt.Errorf("%w: %s", ErrBasicConditionsCourseName, value)
+	}
+
+	// su longitud minima debe ser de 10 caracteres
+	var length = len([]rune(value))
+
+	if length < 10 {
+		log.Println("la longitud es de menos de 10 caracteres")
+		return CourseName{}, fmt.Errorf("%w: %s", ErrBasicConditionsCourseName, value)
 	}
 
 	return CourseName{

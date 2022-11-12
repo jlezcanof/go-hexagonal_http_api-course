@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/08-02-build-and-deploy/internal"
 	"github.com/huandu/go-sqlbuilder"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/08-02-build-and-deploy/internal"
 )
 
 // CourseRepository is a MySQL mooc.CourseRepository implementation.

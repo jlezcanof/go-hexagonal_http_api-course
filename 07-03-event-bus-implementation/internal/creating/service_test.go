@@ -5,10 +5,10 @@ import (
 	"errors"
 	"testing"
 
-	mooc "github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/platform/storage/storagemocks"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/kit/event"
-	"github.com/CodelyTV/go-hexagonal_http_api-course/07-03-event-bus-implementation/kit/event/eventmocks"
+	mooc "github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/internal/platform/storage/storagemocks"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/kit/event"
+	"github.com/jlezcanof/go-hexagonal_http_api-course/07-03-event-bus-implementation/kit/event/eventmocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )
