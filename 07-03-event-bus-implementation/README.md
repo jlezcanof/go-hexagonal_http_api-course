@@ -1,3 +1,10 @@
+El paquete errgroup
+
+La siguiente pregunta es: ¿conocéis el paquete errgroup? Si no es el caso, os invitamos a que le echéis un vistazo al artículo de nuestro blog y veáis como éste nos podría ayudar a la hora de gestionar el ciclo de vida de múltiples rutinas.
+
+
+¡Hasta ahora!
+
 En su momento, ¿fuistes capaces de formalizar la implementación del Command Bus para que realmente fuese production-ready?
 
 
